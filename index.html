@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="ask">
+        <button class="btn btn" id="signup_btn">Sign Up</button>
+        <button class="btn btn-primary" id="login_btn">Log In</button>
+      </div>
+
+      <form id="logIn" class="col-md-8">
+        <input
+          type="text"
+          id="login_username"
+          class="form-control"
+          placeholder="Username"
+          required
+        />
+        <input
+          type="password"
+          id="login_password"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" class="btn btn-primary" value="Log in" />
+      </form>
+
+      <form id="signUp" class="col-md-8">
+        <input
+          type="text"
+          id="signup_username"
+          class="form-control"
+          placeholder="Username"
+          required
+        />
+        <input
+          type="password"
+          id="signup_password"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+        <label><input type="checkbox" id="role" />I am a admin</label>
+        <input type="submit" class="btn btn-primary" value="Add Account" />
+      </form>
+    </div>
+    <script src="scripts/file.js"></script>
+  </body>
+</html>

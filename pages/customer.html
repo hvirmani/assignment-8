@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- The Modal -->
+    <button
+      type="button"
+      id="showDesc"
+      class="btn btn-primary"
+      data-toggle="modal"
+      style="display: none"
+      data-target="#myModal"
+    >
+      Open modal
+    </button>
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Product Description</h4>
+          </div>
+
+          <!-- Modal body -->
+          <div id="productDesc" class="modal-body">Modal body..</div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="product">
+      <div class="header">
+        <h1 id="showUser">Welcome</h1>
+        <div>
+          <button id="showCart" class="btn btn-primary">Show Cart</button>
+          <button id="logOut" class="btn btn-danger">Log Out</button>
+        </div>
+      </div>
+      <br />
+      <div class="row" id="productList"></div>
+    </div>
+  </body>
+  <script src="../scripts/main.js"></script>
+</html>

@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 2vh 2vw;
+}
+#ask {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input[type="submit"] {
+  max-width: 200px;
+  margin: auto;
+}
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
